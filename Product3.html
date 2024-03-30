@@ -1,0 +1,184 @@
+<?php
+include 'downloadLogic.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="productstyle.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="Index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products </button>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="product.php">Software Engineering</a>
+      <a href="Product1.php">Civil Engineering</a>
+      <a href="Product2.php">Auto-Mobile Engineering</a>
+      <a href="Product3.php">Machanical Engineering</a>
+      <a href="Product4.php">Electrical Engineering</a>
+    </div>
+  </div> 
+  <a href="About.html">About</a>
+  <a href="Login.php">Login</a>
+  <a href="ragister.php">Create Account</a>
+
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myProducts").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var Products = document.getElementsByClassName("Products-content");
+    var i;
+    for (i = 0; i < Products.length; i++) {
+      var openProducts = Products[i];
+      if (openProducts.classList.contains('show')) {
+        openProducts.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    
+  <div class="gallery">
+
+    <div class="image-holder">
+      <img src="images\S_E 1.jpg" alt="Software Developer For Engineering">
+        <div class="container">
+         <h4><b>Software Developer For Engineering</b></h4> 
+         <p>307 Pages·2011·24.12 MB. </p>
+          <P>Web Design with HTML and CSS Digital Classroom. Published by. Wiley Publishing, Inc. 10475 Crosspoint..</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/Software Development for Engineers, C_C++, Pascal, Assembly, Visual Basic, HTML, Java Script, Java DOS, Windows NT, UNIX ( PDFDrive ).pdf';" >Preview</button>
+          </div>  
+   </div>
+
+    <div class="image-holder">
+            <img src="images\S_E 12.jpg" alt="Web Design with HTML and CSS">
+             
+             <div class="container">
+             <h4><b>Web Design with HTML and CSS</b></h4> 
+             <p>307 Pages·2011·24.12 MB·</p>
+              <P>Web Design with HTML and CSS Digital Classroom. Published by. Wiley Publishing, Inc. 10475 Crosspoint  ...</p>
+                <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+                <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>         
+         </div>
+     </div>
+
+     <div class="image-holder">
+          <img src="images\S_E 3.jpg" alt="java Programming"> 
+            <div class="container">
+            <h4><b>JAVA: Easy Java Programming for Beginners, Your Step-By-Step Guide to Learning Java Programming</b></h4> 
+             <p>2016·2.35 MB·</p>
+              <p> "JAVA: Easy Java Programming For Beginners- Your Step-By-Step Guide to Learning Java  ...</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/JAVA_ Programming 1.pdf';" >Preview</button>    
+        </div>
+     </div>
+
+
+     <div class="image-holder">
+           <img src="images\S_E 4.jpg" alt="Data Analysis with Microsoft Excel">
+           <div class="container">
+            <h4><b>Data Analysis with Microsoft Excel</b></h4> 
+             <p>613 Pages·2010·10.55 MB</p>
+             <p> Analysis with. Microsoft® Excel. Updated for Office 2007®. Kenneth N. Berk. Illinois State University ...</p>
+             <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+             <button class="btn" onclick="location.href='PDF/S_E Book/Data Analysis with Microsoft Excel ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+     </div>
+
+     <div class="image-holder">
+        <img src="images\S_E 5.jpg" alt="Web Animation using JavaScript: Develop & Design">
+        <div class="container">
+          <h4><b>Web Animation using JavaScript: Develop & Design</b></h4> 
+           <p>402 Pages·2015·5.38 MB·</p>
+           <p>  websites. Web Animation using JavaScript will give you not only the .. Velocity supports the px, em, rem, %, deg,..</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>
+        </div>
+     </div>
+
+      <div class="image-holder">
+         <img src="images\S_E 6.jpg" alt="Learn Java for Web Development">
+         <div class="container">
+          <h4><b>Learn Java for Web Development</b></h4> 
+           <p>461 Pages·2014·16.88 MB·</p>
+           <p>  Applications with Spring Web MVC. Learn Java for Web Development  ...</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/Learn Java for Web Development ( PDFDrive ).pdf';" >Preview</button>
+         </div>
+      </div>
+      <div class="image-holder">
+          <img src="images\S_E 8.jpg" alt="Internet Communications Using SIP">
+          <div class="container">
+            <h4><b>Internet Communications Using SIP</b></h4> 
+             <p>409 Pages·2006·11.15 mb</p>
+              <p>Henry Sinnreich. Alan B. Johnston. Internet Communications. Using SIP with the understandi  ...</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+              <button class="btn" onclick="location.href='PDF/S_E Book/Internet Communications Using SIP ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+      </div>
+
+      <div class="image-holder">
+        <img src="images\S_E 9.jpg" alt="PHP, MySQL, JavaScript & HTML5 All-In-One For Dummies">
+        <div class="container">
+          <h4><b>PHP, MySQL, JavaScript & HTML5 All-In-One For Dummies</b></h4> 
+           <p>724 Pages·2013·13.86 MB·</p>
+            <p> Started with PHP & MySQL . with the XAMPP Package . PHP, MySQL, JavaScript & HTML  ....</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/php-mysql-javascript-html5-all-in-one-for-dummies.pdf';" >Preview</button>
+        </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\S_E 7.jpg" alt="Basic Engineering Mathematics">
+      <div class="container">
+        <h4><b>Basic Engineering Mathematics</b></h4> 
+         <p>377 Pages ·3.35 MB</p> 
+         <p>Basic Engineering Mathematics Fifth edition John Bird,BSc(Hons), CMath, CEng, CSci, FIMA, FIET  ...</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/Basic Engineering Mathematics ( PDFDrive ) (1).pdf';" >Preview</button>
+      </div>
+     </div>
+
+     <div class="image-holder">
+      <img src="images\S_E 10.jpg" alt="Foundations of Python Network Programming">
+      <div class="container">
+        <h4><b>Foundations of Python Network Programming</b></h4> 
+         <p>369 Pages·2014·3.71 MB·</p>
+         <p> shops such as Google and NASA, Python is now  Foundations of Python Network Programming  ...</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/ptyhon-network-engginering-english-version.pdf';" >Preview</button>
+      </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\S_E 11.jpg" alt="COMPUTER HARDWARE AND SOFTWARE">
+      <div class="container">
+        <h4><b>COMPUTER HARDWARE AND SOFTWARE</b></h4> 
+         <p>81 Pages·2008·1.38 MB·</p>
+         <P> Personal productivity software – helps you perform personal tasks  ...</p>
+          <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+          <button class="btn" onclick="location.href='PDF/S_E Book/TER HARDWARE AND SOFTWARE ( PDFDrive ).pdf';" >Preview</button>
+      </div>
+     </div>
+ 
+ 
+  </div>
+</body>>
+</html>>

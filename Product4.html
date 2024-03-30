@@ -1,0 +1,184 @@
+<?php
+include 'downloadLogic.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="productstyle.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="Index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products </button>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="product.php">Software Engineering</a>
+      <a href="Product1.php">Civil Engineering</a>
+      <a href="Product2.php">Auto-Mobile Engineering</a>
+      <a href="Product3.php">Machanical Engineering</a>
+      <a href="Product4.php">Electrical Engineering</a>
+    </div>
+  </div> 
+  <a href="About.html">About</a>
+  <a href="Login.php">Login</a>
+  <a href="ragister.php">Create Account</a>
+
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myProducts").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var Products = document.getElementsByClassName("Products-content");
+    var i;
+    for (i = 0; i < Products.length; i++) {
+      var openProducts = Products[i];
+      if (openProducts.classList.contains('show')) {
+        openProducts.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    
+  <div class="gallery">
+
+    <div class="image-holder">
+      <img src="images\E_E 1.jpg" alt="img-5">
+        <div class="container">
+         <h4><b>Software Developer For Engineering</b></h4> 
+         <p>307 Pages·2011·24.12 MB. </p>
+          <P>Web Design with HTML and CSS Digital Classroom. Published by. Wiley Publishing, Inc. 10475 Crosspoint..</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/Software Development for Engineers, C_C++, Pascal, Assembly, Visual Basic, HTML, Java Script, Java DOS, Windows NT, UNIX ( PDFDrive ).pdf';" >Preview</button>
+          </div>  
+   </div>
+
+    <div class="image-holder">
+            <img src="images\E_E 2.jpg" alt="Web Design with HTML and CSS">
+             
+             <div class="container">
+             <h4><b>Web Design with HTML and CSS</b></h4> 
+             <p>307 Pages·2011·24.12 MB·</p>
+              <P>Web Design with HTML and CSS Digital Classroom. Published by. Wiley Publishing, Inc. 10475 Crosspoint  ...</p>
+                <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+                <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>         
+         </div>
+     </div>
+
+     <div class="image-holder">
+          <img src="images\E_E 3.jpg" alt="java Programming"> 
+            <div class="container">
+            <h4><b>JAVA: Easy Java Programming for Beginners, Your Step-By-Step Guide to Learning Java Programming</b></h4> 
+             <p>2016·2.35 MB·</p>
+              <p> "JAVA: Easy Java Programming For Beginners- Your Step-By-Step Guide to Learning Java  ...</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/JAVA_ Programming 1.pdf';" >Preview</button>    
+        </div>
+     </div>
+
+
+     <div class="image-holder">
+           <img src="images\E_E 4.jpg" alt="Engineering Mathematics. A Foundation for Electronic, Electrical, Communications and Systems">
+           <div class="container">
+            <h4><b>Engineering Mathematics. A Foundation for Electronic, Electrical, Communications and Systems</b></h4> 
+             <p>1,017 Pages·2017·5.5 MB·</p>
+              <p>Engineering Mathematics. A Foundation for Electronic, Electrical, Communications and Systems  .....</p>
+             <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+             <button class="btn" onclick="location.href='PDF/S_E Book/Data Analysis with Microsoft Excel ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+     </div>
+
+     <div class="image-holder">
+        <img src="images\E_E 5.jpg" alt="An Engineer's Guide to MATLAB: With Applications from Mechanical, Aerospace, Electrical, Civil, and">
+        <div class="container">
+          <h4><b>An Engineer's Guide to MATLAB: With Applications from Mechanical, Aerospace, Electrical, Civil, and</b></h4> 
+           <p>846 Pages·2010·9.45 MB·</p>
+            <p>Aeronautical, Civil, and Electrical engineering that require/use MATLAB.   This highly respected guide  ....</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>
+        </div>
+     </div>
+
+      <div class="image-holder">
+         <img src="images\E_E 6.jpg" alt="Electrical circuit theory and technology, Third Edition (Electrical Circuit Theory and Technology)">
+         <div class="container">
+          <h4><b>Electrical circuit theory and technology, Third Edition (Electrical Circuit Theory and Technology)</b></h4> 
+           <p>694 Pages·2007·8.17 MB·</p>
+           <p> of illustrative example - maximises relevance to actual engineering practice for the student rea Electrical.</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/Learn Java for Web Development ( PDFDrive ).pdf';" >Preview</button>
+         </div>
+      </div>
+      <div class="image-holder">
+          <img src="images\E_E 7.jpg" alt="Electric Power Engineering Handbook">
+          <div class="container">
+            <h4><b>Electric Power Engineering Handbook</b></h4> 
+             <p>503 Pages·2009·3.76 MB·</p>
+              <p>Electric Power Generation, Transmission, and Distribution. Edited by The Electrical Engineering  ... ...</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+              <button class="btn" onclick="location.href='PDF/S_E Book/Internet Communications Using SIP ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+      </div>
+
+      <div class="image-holder">
+        <img src="images\E_E 8.jpg" alt="Handbook of Electrical Engineering">
+        <div class="container">
+          <h4><b>Handbook of Electrical Engineering</b></h4> 
+           <p>631 Pages·2006·3.84 MB·</p>
+            <p>Handbook of Electrical Engineering: For Practitioners in the Oil, Gas and six years' experience  ....</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/php-mysql-javascript-html5-all-in-one-for-dummies.pdf';" >Preview</button>
+        </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\E_E 9.jpg" alt="Electrical Engineering">
+      <div class="container">
+        <h4><b>Electrical Engineering</b></h4> 
+         <p>714 Pages·2011·11.46 MB·</p>
+         <p> Electrical Engineering Electrical Engineering: Concepts and Applications S.A. Reza Zekav  ....</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/Basic Engineering Mathematics ( PDFDrive ) (1).pdf';" >Preview</button>
+      </div>
+     </div>
+
+     <div class="image-holder">
+      <img src="images\E_E 10.jpg" alt="Foundations of Python Network Programming">
+      <div class="container">
+        <h4><b>Foundations of Python Network Programming</b></h4> 
+         <p>369 Pages·2014·3.71 MB·</p>
+         <p> shops such as Google and NASA, Python is now  Foundations of Python Network Programming  ...</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/ptyhon-network-engginering-english-version.pdf';" >Preview</button>
+      </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\E_E 11.jpg" alt="COMPUTER HARDWARE AND SOFTWARE">
+      <div class="container">
+        <h4><b>COMPUTER HARDWARE AND SOFTWARE</b></h4> 
+         <p>81 Pages·2008·1.38 MB·</p>
+         <P> Personal productivity software – helps you perform personal tasks  ...</p>
+          <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+          <button class="btn" onclick="location.href='PDF/S_E Book/TER HARDWARE AND SOFTWARE ( PDFDrive ).pdf';" >Preview</button>
+      </div>
+     </div>
+ 
+ 
+  </div>
+</body>>
+</html>>

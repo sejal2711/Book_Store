@@ -1,0 +1,184 @@
+<?php
+include 'downloadLogic.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="productstyle.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="Index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products </button>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="product.php">Software Engineering</a>
+      <a href="Product1.php">Civil Engineering</a>
+      <a href="Product2.php">Auto-Mobile Engineering</a>
+      <a href="Product3.php">Machanical Engineering</a>
+      <a href="Product4.php">Electrical Engineering</a>
+    </div>
+  </div> 
+  <a href="About.html">About</a>
+  <a href="Login.php">Login</a>
+  <a href="ragister.php">Create Account</a>
+
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myProducts").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var Products = document.getElementsByClassName("Products-content");
+    var i;
+    for (i = 0; i < Products.length; i++) {
+      var openProducts = Products[i];
+      if (openProducts.classList.contains('show')) {
+        openProducts.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    
+  <div class="gallery">
+
+    <div class="image-holder">
+      <img src="images\AutoM 1.jpg" alt="img-5">
+        <div class="container">
+         <h4><b>Software Developer For Engineering</b></h4> 
+         <p>307 Pages·2011·24.12 MB. </p>
+          <P>Web Design with HTML and CSS Digital Classroom. Published by. Wiley Publishing, Inc. 10475 Crosspoint..</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/Software Development for Engineers, C_C++, Pascal, Assembly, Visual Basic, HTML, Java Script, Java DOS, Windows NT, UNIX ( PDFDrive ).pdf';" >Preview</button>
+          </div>  
+   </div>
+
+    <div class="image-holder">
+            <img src="images\AutoM 2.jpg" alt="Automobile Suspensions">
+             
+             <div class="container">
+             <h4><b>Automobile Suspensions</b></h4> 
+             <p>222 Pages·1981·7.44 MB·</p>
+              <P> No attempt has been made to make any stress calculations on suspension components. The automobile</p>
+                <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+                <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>         
+         </div>
+     </div>
+
+     <div class="image-holder">
+          <img src="images\AutoM 3.jpg" alt="Essential Skills Manual - Automotive Service Technician"> 
+            <div class="container">
+            <h4><b>Essential Skills Manual - Automotive Service Technician</b></h4> 
+             <p>255 Pages·2010·3.86 MB·</p>
+              <P>AUTOMOTIVE SERVICE TECHNICIAN. MANUAL CONTENTS. Included in this Essential Skills Manual: PAGE....</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/JAVA_ Programming 1.pdf';" >Preview</button>    
+        </div>
+     </div>
+
+
+     <div class="image-holder">
+           <img src="images\AutoM 4.jpg" alt="Automotive Technician Training Guide">
+           <div class="container">
+            <h4><b>Automotive Technician Training Guide</b></h4> 
+             <p>978 Pages·2011·38.87 MB·</P>
+              <P>Page 1 Automotive Technician Training (ATT) fflLook back over the previous section and write out a list of...</p>
+             <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+             <button class="btn" onclick="location.href='PDF/S_E Book/Data Analysis with Microsoft Excel ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+     </div>
+
+     <div class="image-holder">
+        <img src="images\AutoM 5.jpg" alt="Automotive Computer Controlled Systems (Automobile Electronics Referex Engineering)">
+        <div class="container">
+          <h4><b>Automotive Computer Controlled Systems (Automobile Electronics Referex Engineering)</b></h4> 
+           <p>266 Pages·2001·7.34 MB·</p>
+            <P>Automotive Computer Controlled Systems (Automobile Electronics Referex Engineering) Allan W. M  .....</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>
+        </div>
+     </div>
+
+      <div class="image-holder">
+         <img src="images\AutoM 6.jpg" alt="Understanding Automotive Electronics, Eighth Edition: An Engineering PerspectiveLearn Java for Web Development">
+         <div class="container">
+          <h4><b>Understanding Automotive Electronics, Eighth Edition: An Engineering Perspective</b></h4> 
+           <p>712 Pages·2017·39.43 MB·</p>
+            <p>Understanding Automotive Electronics: An Engineering Perspective, Eighth Edition, is written with an..</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/Learn Java for Web Development ( PDFDrive ).pdf';" >Preview</button>
+         </div>
+      </div>
+      <div class="image-holder">
+          <img src="images\AutoM 8.jpg" alt="Advanced automotive fault diagnosis : automotive technology: vehicle maintenance and repair">
+          <div class="container">
+            <h4><b>Advanced automotive fault diagnosis : automotive technology: vehicle maintenance and repair</b></h4> 
+             <p>452 Pages·2012·19.6 MB·29,867 Downloads·New!</p>
+              <p>Automobile Mechanical and Electrical Systems concentrates on core technologies to provide the essential.</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+              <button class="btn" onclick="location.href='PDF/S_E Book/Internet Communications Using SIP ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+      </div>
+
+      <div class="image-holder">
+        <img src="images\AutoM 7.jpg" alt="Automotive Technology: Principles, Diagnosis, and Service (4th Edition)">
+        <div class="container">
+          <h4><b>Automotive Technology: Principles, Diagnosis, and Service (4th Edition)</b></h4> 
+           <p>1,665 Pages·2011·8.91 MB·</p>
+            <p>Automotive Technology: Principles, Diagnosis, and Service, Fourth Edition, meets the needs for a..</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/php-mysql-javascript-html5-all-in-one-for-dummies.pdf';" >Preview</button>
+        </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\AutoM 9.jpg" alt="Control of Induction Motors (Electrical and Electronic Engineering) (Engineering)">
+      <div class="container">
+        <h4><b>Control of Induction Motors (Electrical and Electronic Engineering) (Engineering)</b></h4> 
+         <p>241 Pages·2000·1.26 MB·</p>
+          <p>parts: 1) control-oriented description of induction motors, 2) control methods, and systems  ......</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/Basic Engineering Mathematics ( PDFDrive ) (1).pdf';" >Preview</button>
+      </div>
+     </div>
+
+     <div class="image-holder">
+      <img src="images\AutoM 10.jpg" alt="Analog Interfacing to Embedded Microprocessor Systems">
+      <div class="container">
+        <h4><b>Analog Interfacing to Embedded Microprocessor Systems</b></h4> 
+         <p>335 Pages·2004·2.08 MB·</p>
+         <p> Analog Interfacing to Embedded Microprocessors addresses the technologies and methods used  ...</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/ptyhon-network-engginering-english-version.pdf';" >Preview</button>
+      </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\AutoM 11.jpg" alt="Induction Motors: Modelling and Control">
+      <div class="container">
+        <h4><b>Induction Motors: Modelling and Control</b></h4> 
+         <p>557 Pages·2016·16.24 MB·</p>
+          <p>Induction Motor Space Vector Modulation Direct Torque Control Using Complex Transfer Function C  .....</p>
+          <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+          <button class="btn" onclick="location.href='PDF/S_E Book/TER HARDWARE AND SOFTWARE ( PDFDrive ).pdf';" >Preview</button>
+      </div>
+     </div>
+ 
+ 
+  </div>
+</body>>
+</html>>

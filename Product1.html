@@ -1,0 +1,184 @@
+<?php
+include 'downloadLogic.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="productstyle.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="Index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products </button>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="product.php">Software Engineering</a>
+      <a href="Product1.php">Civil Engineering</a>
+      <a href="Product2.php">Auto-Mobile Engineering</a>
+      <a href="Product3.php">Machanical Engineering</a>
+      <a href="Product4.php">Electrical Engineering</a>
+    </div>
+  </div> 
+  <a href="About.html">About</a>
+  <a href="Login.php">Login</a>
+  <a href="ragister.php">Create Account</a>
+
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myProducts").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var Products = document.getElementsByClassName("Products-content");
+    var i;
+    for (i = 0; i < Products.length; i++) {
+      var openProducts = Products[i];
+      if (openProducts.classList.contains('show')) {
+        openProducts.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    
+  <div class="gallery">
+
+    <div class="image-holder">
+      <img src="images\C_E_1.jpg" alt="The vision for civil engineering in 2025 : based on the Summit on the Future of Civil Engineering 2025,">
+        <div class="container">
+         <h4><b>The vision for civil engineering in 2025 : based on the Summit on the Future of Civil Engineering 2025,</b></h4> 
+         <p>114 Pages·2007·3.01 MB·23,173 Downloads·New!
+          The vision for civil engineering in 2025 : based on the Summit on the Future of Civil Engineering  ....</p>
+            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/Software Development for Engineers, C_C++, Pascal, Assembly, Visual Basic, HTML, Java Script, Java DOS, Windows NT, UNIX ( PDFDrive ).pdf';" >Preview</button>
+          </div>  
+   </div>
+
+    <div class="image-holder">
+            <img src="images\C_E 2.jpg" alt="FE review manual: rapid preparation for the general fundamentals of engineering exam">
+             
+             <div class="container">
+             <h4><b>Civil Disciples -Specific Review for The FE/EIT Exam</b></h4> 
+             <p>865 Pages·2006·32.37 MB</p>
+              <p>The Best-Selling Book for FE Exam Preparation The FE Review Manual gives you the power to pa  ....</p>
+                <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+                <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>         
+         </div>
+     </div>
+
+     <div class="image-holder">
+          <img src="images\C_E 3.jpg" alt="Civil PE Sample Examination"> 
+            <div class="container">
+            <h4><b>Civil PE Sample Examination</b></h4> 
+             <p>2016·2.35 MB·</p>
+              <p> Civil PE Sample Examination For Beginners- Your Step-By-Step Guide to Learn ...</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/JAVA_ Programming 1.pdf';" >Preview</button>    
+        </div>
+     </div>
+
+
+     <div class="image-holder">
+           <img src="images\C_E 4.jpg" alt="Basic Civil Engineering">
+           <div class="container">
+            <h4><b>Basic Civil Engineering</b></h4> 
+             <p>300 Pages·2009·3.37 MB·</p>
+              <p>Preface. All engineering students should know basic civil engineering since they need Hence all  ....</p>
+             <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+             <button class="btn" onclick="location.href='PDF/S_E Book/Data Analysis with Microsoft Excel ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+     </div>
+
+     <div class="image-holder">
+        <img src="images\C_E 5.jpg" alt="Surveying for civil and mine engineers : theory, workshops, and racticals">
+        <div class="container">
+          <h4><b>Surveying for civil and mine engineers : theory, workshops, and racticals</b></h4> 
+           <p>271 Pages·2018·15.94 MB </p>
+            <p>survey project, designed for civil and mining engineers. The format of the book is based on a number  .....</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/web-design-with-html-and-css-digital-classroom (1).pdf';" >Preview</button>
+        </div>
+     </div>
+
+      <div class="image-holder">
+         <img src="images\C_E 6.jpg" alt="An Introduction to Excel for Civil Engineers: From engineering theory to Excel practice">
+         <div class="container">
+          <h4><b>An Introduction to Excel for Civil Engineers: From engineering theory to Excel practice</b></h4> 
+           <p>387 Pages·2016·28.64 MB·</p>
+            <p> to Excel for Civil Engineers: From engineering theory to Excel practice Gunthar Pangaribuan  .....</p>
+           <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+           <button class="btn" onclick="location.href='PDF/S_E Book/Learn Java for Web Development ( PDFDrive ).pdf';" >Preview</button>
+         </div>
+      </div>
+      <div class="image-holder">
+          <img src="images\C_E 7.jpg" alt="Handbook of Civil Engineering Calculations">
+          <div class="container">
+            <h4><b>Handbook of Civil Engineering Calculations</b></h4> 
+             <p>829 Pages·2012·12.29 MB·</p>
+             <p>  deal with a force in  Handbook of Civil Engineering Calculations  .....</p>
+              <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+              <button class="btn" onclick="location.href='PDF/S_E Book/Internet Communications Using SIP ( PDFDrive ).pdf';" >Preview</button>
+        </div>
+      </div>
+
+      <div class="image-holder">
+        <img src="images\C_E 8.jpg" alt="handbook of civil engineering calculations">
+        <div class="container">
+          <h4><b>handbook of civil engineering calculations</b></h4> 
+           <p>883 Pages·2009·13.4 MB·</p>
+            <p> a comprehensive collection of civil engineering  handbook of civil engineering calculations  .....</p>            <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+            <button class="btn" onclick="location.href='PDF/S_E Book/php-mysql-javascript-html5-all-in-one-for-dummies.pdf';" >Preview</button>
+        </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\C_E 10.jpg" alt="Advanced Methods of Structural Analysis - Civil Engineering">
+      <div class="container">
+        <h4><b>Advanced Methods of Structural Analysis - Civil Engineering</b></h4> 
+         <p>618 Pages·2012·5.98 MB·</p>
+          <p>Advanced Methods of Structural Analysis. 123. www Authorswrotethe bookon the basisof their...</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/Basic Engineering Mathematics ( PDFDrive ) (1).pdf';" >Preview</button>
+      </div>
+     </div>
+
+     <div class="image-holder">
+      <img src="images\C_E 9.jpg" alt="Materials for Civil and Construction Engineers, 3rd Edition">
+      <div class="container">
+        <h4><b>Materials for Civil and Construction Engineers, 3rd Edition</b></h4> 
+         <p>601 Pages·2010·12.1 MB·</p>
+          <P>Materials for Civil and Construction Engineers, 3/e is ideal for courses in Civil Engineerin  .....</p>
+         <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+         <button class="btn" onclick="location.href='PDF/S_E Book/ptyhon-network-engginering-english-version.pdf';" >Preview</button>
+      </div>
+     </div>
+     <div class="image-holder">
+      <img src="images\C_E 11.jpg" alt="Structural Engineering - Civil, Environmental, and Architectural">
+      <div class="container">
+        <h4><b>Structural Engineering - Civil, Environmental, and Architectural</b></h4> 
+         <p>133 Pages·2004·2.47 MB·</p>
+          <p>STRUCTURAL CONCEPTS AND SYSTEMS .. 10.6 Stress-strain diagram for most structural steels..</p>
+          <a  href="downloadLogic.php?file_id=<?php echo "2"?>"> <button class="btn"><i class="fa fa-download"></i>Download</button></a><br> 
+          <button class="btn" onclick="location.href='PDF/S_E Book/TER HARDWARE AND SOFTWARE ( PDFDrive ).pdf';" >Preview</button>
+      </div>
+     </div>
+ 
+ 
+  </div>
+</body>>
+</html>>
+

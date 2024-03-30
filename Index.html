@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+    <link rel="stylesheet" href="Styleindex.css">
+    <title>Book Zone</title>
+
+<style>
+
+.a {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.container {
+  background-color:light-gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family:Arial; 
+  padding: 16px;
+}
+
+.container:hover {
+  box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 7px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown .dropdown-content{
+    background-color:white;
+    font-size: 16px;  
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="index.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn">Products </button>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="product.php">Software Engineering</a>
+                  <a href="Product1.php">Civil Engineering</a>
+                  <a href="Product2.php">Auto-Mobile Engineering</a>
+                  <a href="Product3.php">Machanical Engineering</a>
+                  <a href="Product4.php">Electrical Engineering</a>
+                </div>
+              </div> </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Create Account</a></li>
+        </div>
+    </nav>
+
+    <div class="section-1">
+        <div class="Section-1-text">
+            <center><h1>E-Book store</h1>
+            <p>You can find out yours book here.</p>
+            <a href="login.php" class="btn">Explore Here  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+
+        </center>
+        </div>
+    </div>
+<div class="section-2">
+        <center><h2>Products</h2></center>
+        <!-- <a href="#"><img src="./images/img_2.jpg" alt=""> -->
+
+
+   <div class="container">
+                   
+      <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+              <center><a href="product.php">
+                   <img src="images\S_E 1.jpeg" alt="Software Engineering" style="width:80%">
+                     <p><b>Software Engineering</b></p></a></center>
+      </div>
+              
+      <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+              <center> <href="product1.php">
+                   <img src="images\C_E 1.jpeg" alt="Civil Engineering" style="width:80%">
+                   <p><b>Civil Engineering</b></p></a></center>
+      </div>
+              
+      <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+              <center> <href="Desktop/search.html">
+                    <img src="images\AutoM 1.png" alt="Auto-Mobile Engineering" style="width:80%">
+                     <p><b>Auto-Mobile Engineering</b></p></a></center>
+      </div>
+                  
+      <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+             <center>  <href="Desktop/search.html">
+                  <img src="images\M_E 1.jpeg"  alt="Machanical Engineering" style="width:80%">
+                   <p><b>Machanical Engineering</b></p></a></center>
+      </div>
+               
+      <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+             <center>  <href="Desktop/search.html"> 
+                   <img src="images\E_E 1.jpeg" alt="Electronic Engineering" style="width:80%">
+                    <p><b>Electronic Engineering</b></p></a></center>
+      </div>
+              
+         <!-- Next and previous buttons -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         
+              <!-- Image text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+    
+   </div>
+
+  <script>
+   let slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+   function currentSlide(n) {
+    showSlides(slideIndex = n); 
+   }
+
+   function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+   }
+   </script>
+              
+
+
+        
+   <div class="gallery">
+            <div class="image-holder">
+                <a href="">
+                   <img src="images\S_E 1.jpg" alt="SOFTWARE ENGINEERING">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="images\C_E 1.jpg" alt="Civil Engineering">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="images\AutoM 1.jpg" alt="Automobile Engineering">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="images\M_E 1.jpg" alt="Machanical Engineering">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="images\E_E 1.jpg" alt="Electrical Engineering">
+                </a>
+            </div>
+    </div>   
+   
+</div>
+    
+
+
+    <!-- section-5 contact us  -->
+    <div class="section-5">
+
+    <h2>Contact Us</h2>
+         <p>leave us a message or suggestion:</p>
+       <div class="column">
+          <form action="C:\Users\Dell\Desktop\book store\index.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+               <option value="india">India</option>
+               <option value="australia">Australia</option>
+               <option value="canada">Canada</option>
+               <option value="usa">USA</option>
+               </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+ 
+    </div>
+</body>
+</html>
